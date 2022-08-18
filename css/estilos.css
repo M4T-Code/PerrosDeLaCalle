@@ -1,0 +1,249 @@
+/*---------------------------------- html -----------------------------------------*/
+html {
+    background-color: black;
+    font-family: 'Lato', sans-serif;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+}
+/*---------------------------------- html -----------------------------------------*/
+/*---------------------------------- header -----------------------------------------*/
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-areas: 
+    "perroImg"
+    "nav-bar";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    height: 12rem;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+.perroImg{
+    grid-area: perroImg;
+    width: 12rem;
+    margin-left: 1rem;
+    
+}
+.nav-bar{
+    grid-area: nav-bar;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 5rem;
+    margin-right: 1rem;
+}
+nav ul li{
+    margin: 1rem;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+nav ul li a:hover{
+    color: orange;
+}
+
+
+/*---------------------------------- header -----------------------------------------*/
+/*---------------------------------- footer -----------------------------------------*/
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 10rem;
+}
+.contacto{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    height: 3rem;
+    padding: 1rem;
+    border-radius: 20px;
+}
+.mateo{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    width: 13rem;
+}
+
+button{
+    background-color: black;
+    border: 3px solid white;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+button a:hover{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    padding-left: 2.7rem;
+    padding-right: 3rem;
+    border-radius: 8px;
+    
+}
+button a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+i{
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+h3{
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+    color: white;
+}
+.rrss{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 11rem;
+    margin-top: 1.9rem;
+    margin-left: 2rem;
+    height: 3rem;
+    padding: 1rem;
+}
+.rrss i{
+    margin-right: 30px;
+}
+/*---------------------------------- footer -----------------------------------------*/
+/*---------------------------------- index-html -----------------------------------------*/
+main{
+    grid-area: main;
+    background: rgb(2,0,36);
+    background: linear-gradient(140deg,
+     rgba(2,0,36,1) 0%, rgba(255,169,0,1) 0%, 
+     rgba(71,47,0,1) 100%, rgba(0,0,0,1) 100%,
+      rgba(0,212,255,1) 100%);
+}
+h1{
+    text-align: center;
+    margin: 2rem;
+}
+h2{
+    text-align: center; 
+}
+p{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+.grid-index{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "video-index"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+.main--video--perros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+   
+}
+.index-text{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+/*---------------------------------- index-html -----------------------------------------*/
+/*---------------------------------- res-mobile -----------------------------------------*/
+@media only screen and (min-width: 0px) and (max-width: 768px){
+    .perroLogoImg{
+        display: flex;
+        justify-content: center;
+        width: 190%;
+    }   
+    .perroImg{
+          display: flex;
+          width: 10rem;
+          height: 10rem;
+      }
+      nav{
+          display: flex;
+          justify-content: flex-start;
+      }
+      nav ul{
+          display: flex;
+          text-align: center;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-left: -12rem;
+          margin-right: -8rem;
+          padding-top: 2.1rem;
+      }
+      nav ul li{
+          font-size: 2rem;
+      }
+      nav ul li a{
+          font-size: 0.9rem;
+      }
+      footer{
+        display: grid;
+        grid-template-areas: 
+        "mateo"
+        "rrss";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+      }
+      .rrss{
+        grid-area: rrss;
+        display: flex;
+        justify-content:center ;
+        width: 75%;
+        margin-top: 2%;
+      }
+      i{
+        font-size: 30px;
+        margin-left: 10px;
+      }
+      .mateo{
+        grid-area: mateo;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 3%;
+      }
+      .contacto{
+        grid-area: contacto;
+        display: none;
+      }
+      .contacto h3{
+        display: none;
+      }
+  
+  }
+  /*---------------------------------- res-mobile -----------------------------------------*/
+  /*---------------------------------- res-desktop -----------------------------------------*/
+  @media only screen and (min-width: 1024px){
+    .index-text{
+        padding: 1rem;
+    }
+    .index-txt{
+        padding: 0rem 13rem 0rem 13rem;
+    }
+  }
+  /*---------------------------------- res-desktop -----------------------------------------*/
+ 
