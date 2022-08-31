@@ -278,17 +278,7 @@ p{
     margin-right: 4rem;
     border-radius: 10px;
 }
-.cards{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 20px;
-    width: 20rem;
-    margin: 20px;
-    padding: 1rem 0rem 3rem;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
+
 ul li img{
     width: 80%;
     height: 100%;
@@ -309,6 +299,7 @@ ul li p{
         margin-left: 5rem;
         margin-right: 5rem;
     }
+    
   }
 
 /*---------------------------------- nostros -----------------------------------------*/
@@ -317,17 +308,14 @@ ul li p{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    margin-left: 8rem;
-    margin-right: 8rem;
+    justify-content: center;
     border-radius: 10px;
  }
  .cards-dogs{
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: white;
     border-radius: 20px;
     width: 20rem;
@@ -357,6 +345,8 @@ h4{
         margin-left: 1rem;
         margin-right: 1rem;
     }
+    .
+    
 }
 /*---------------------------------- perros -----------------------------------------*/
 /*---------------------------------- contacto -----------------------------------------*/
